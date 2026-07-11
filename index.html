@@ -12,6 +12,23 @@
 body{margin:0;background:#eef1f5;font-family:'Heebo',sans-serif}
 a{color:#1d4ed8}a:hover{color:#153aa0}
 @media print{body{background:#fff}}
+
+/* --- Responsive: tablet --- */
+@media (max-width:768px){
+  [style*="padding:56px 64px 52px"]{padding:44px 34px 40px !important}
+  h1{font-size:34px !important}
+}
+/* --- Responsive: mobile --- */
+@media (max-width:560px){
+  [style*="min-height:100vh"]{padding:22px 12px 40px !important}
+  [style*="padding:56px 64px 52px"]{padding:30px 18px 28px !important}
+  h1{font-size:27px !important;margin-bottom:22px !important}
+  /* collapse every multi-column grid to a single column */
+  [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  /* pricing rows: right-align the cost cell when stacked */
+  [style*="text-align:left"]{text-align:right !important}
+  h2{font-size:19px !important}
+}
 </style>
 </head>
 <body>
